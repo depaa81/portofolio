@@ -1,48 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Portofolio Modern</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ama | Web Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a, #312e81);
+      background-size: 300% 300%;
+      animation: gradientAnimation 10s ease infinite;
+    }
+    @keyframes gradientAnimation {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+  </style>
 </head>
-<body>
-    <div class="loading-screen" id="loadingScreen">
-        <div class="bird" id="bird1"></div>
-        <div class="bird" id="bird2"></div>
-        <div class="bird" id="bird3"></div>
-        <div class="bird" id="bird4"></div>
-        <p>Memuat halaman...</p>
-        <audio id="whooshSound" src="https://cdn.pixabay.com/audio/2021/08/04/audio_d1e4b7b147.mp3"></audio>
+<body class="text-white">
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6" data-aos="fade-up">
+    <img src="https://i.ibb.co/FnChN6h/avatar.png" alt="Ama" class="w-32 h-32 rounded-full mb-4 shadow-lg">
+    <h1 class="text-4xl font-bold mb-2">Hai, saya Ama 👋</h1>
+    <p class="text-lg max-w-xl text-gray-300">Seorang Web Developer yang fokus pada desain modern, animasi interaktif, dan teknologi front-end.</p>
+  </section>
+  <section class="py-20 px-6 text-center" data-aos="fade-right">
+    <h2 class="text-3xl font-bold mb-4">Tentang Saya</h2>
+    <p class="max-w-2xl mx-auto text-gray-300">Saya memiliki pengalaman membangun website dengan HTML, CSS, Tailwind, dan JavaScript. Tujuan saya adalah menciptakan UI yang estetis dan UX yang menyenangkan.</p>
+  </section>
+  <section class="py-20 px-6 bg-white/10 backdrop-blur-md rounded-2xl mx-4 my-10" data-aos="fade-left">
+    <h2 class="text-3xl font-bold text-center mb-8">Keahlian</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 text-center">
+      <div class="bg-white/10 p-4 rounded-xl">🌐 HTML & CSS</div>
+      <div class="bg-white/10 p-4 rounded-xl">🎨 Tailwind CSS</div>
+      <div class="bg-white/10 p-4 rounded-xl">⚙️ JavaScript</div>
+      <div class="bg-white/10 p-4 rounded-xl">⚛️ React.js</div>
+      <div class="bg-white/10 p-4 rounded-xl">🚀 Git & GitHub</div>
+      <div class="bg-white/10 p-4 rounded-xl">📦 Vercel</div>
     </div>
-
-    <main id="content" style="display: none;">
-        <header>
-            <h1>Halo, Saya Deva Yuliantoro</h1>
-            <p>Front-End Developer & Designer</p>
-        </header>
-
-        <section class="about">
-            <h2>Tentang Saya</h2>
-            <p>Saya seorang developer yang menyukai desain modern dan interaktif.</p>
-        </section>
-
-        <section class="projects">
-            <h2>Projek Terbaru</h2>
-            <ul>
-                <li>Website Landing Page</li>
-                <li>Aplikasi Todo List</li>
-                <li>UI/UX Dashboard Admin</li>
-            </ul>
-        </section>
-
-        <section class="contact">
-            <h2>Kontak Saya</h2>
-            <p>Email: devayuliantoro@example.com</p>
-            <p>WhatsApp: 081234567890</p>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
+  </section>
+  <section class="py-20 px-6" data-aos="zoom-in">
+    <h2 class="text-3xl font-bold text-center mb-8">Projek Terbaru</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white/10 p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold mb-2">Landing Page Portofolio</h3>
+        <p class="text-gray-300">Website elegan dengan animasi scroll dan dark mode. Dibuat dengan Tailwind & JavaScript.</p>
+      </div>
+      <div class="bg-white/10 p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold mb-2">Linktree Custom</h3>
+        <p class="text-gray-300">Linktree pribadi dengan tema modern, responsive, dan integrasi media sosial.</p>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 px-6 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6">Kontak</h2>
+    <p class="text-gray-300 mb-4">Hubungi saya melalui email atau media sosial:</p>
+    <div class="flex justify-center space-x-6">
+      <a href="mailto:ama@example.com" class="hover:underline">Email</a>
+      <a href="#" class="hover:underline">Instagram</a>
+      <a href="#" class="hover:underline">GitHub</a>
+      <a href="#" class="hover:underline">LinkedIn</a>
+    </div>
+  </section>
+  <footer class="py-6 text-center text-sm text-gray-400">
+    © 2025 Ama. Dibuat dengan ❤️ dan Tailwind CSS.
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
